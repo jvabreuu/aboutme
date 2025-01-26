@@ -1,0 +1,259 @@
+<!DOCTYPE html> <!--html5 selecionado-->
+<html lang="en">   
+<head>
+    <!--meta tags definidas-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="author" content="joão Vitor Abreu">
+    <meta name="description" content="Curriculo João vitor abreu, estudante de ti na Uninter.">
+
+<title>João Vitor Abreu</title>
+<!--ESTILIZAÇÃO CSS-->
+<style>
+       /*definiçao da cor de fundo da pagina*/
+    body{
+        background: rgb(4, 83, 82);
+        background: radial-gradient(circle, rgba(65,173,172,1) 34%, rgba(9,85,111,1) 100%);
+    }
+       /*meu nome como titulo*/
+    h1{color: aliceblue;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 300%;
+    }  
+        /*cor do texto do link*/
+    a{ text-decoration: none;
+    color: aliceblue;}
+
+
+     /* definiçao de texto*/   
+        
+   p{
+    text-align: center;
+    font-size: 90%;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 40px;
+  
+   }
+    
+     /* Estilização da caixa dos links*/
+    .topico {
+            display: flex; /* Define um layout flexbox */
+            justify-content: space-evenly; /* Distribui os elementos com espaçamento igual */
+            align-items: flex-start; /* Alinha os elementos verticalmente ao centro */
+            height: 10vh; /* Define a altura total da tela */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove espaçamento interno */
+           
+        }
+
+
+        /*organizaçao dos topicos*/
+
+        .topico span {
+            padding: 10px 20px; /* Espaçamento interno nos spans */
+            background-color: #2df0f0; /* Cor de fundo dos spans */
+            color: white; /* Cor do texto */
+            border-radius: 5px; /* Cantos arredondados */
+            font-family: Arial, sans-serif; /* Fonte */
+        }
+    
+         /*sensibilidade ao passar o mouse*/
+        span:hover{ filter: brightness(80%);}
+
+         /*subtitulo*/
+       h2{ font-size: 200%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+color: aliceblue;
+margin: 5%;
+border: 10%;
+}
+/* subtitulo trabalhos e requisitos de codigo do trabalho*/
+h3{ font-size:150% ;
+color: aliceblue;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+/*subtitulo*/
+h4{ color:aliceblue;
+    font-size:150% ;
+font-family: Arial, Helvetica, sans-serif}
+
+</style>
+</head>
+<!--corpo da pagina-->
+<body>
+  <a href="index.html"> <h1>João Vitor Abreu</h1> </a>
+  <br>
+  <br>
+    <!--links localizados nas caixas-->
+  <div class="topico">
+    <span>  <a href="sobremim.html">SOBRE MIM</a> </span>
+   <span> <a href="educaçao.html">EDUCAÇÃO</a> </span> 
+    <span> <a href="portifólio.html">PORTIFOLIO</a> </span> 
+   <span> <a href="contato.html">CONTATO</a> </span> 
+</div>
+<br>
+<br>
+<!--subtitulo-->
+ <h2> Portifólio</h2>
+<!--conteudo-->
+ <h3>Trabalhos faculdade</h3>
+
+ <h3>Objetivo cobrar um valor diferente com base na idade do cliente </h3>
+ <br>
+ <h4>codigo python</h4>
+ <pre><code>
+    
+    # Sistema desenvolvido por João Vitor Abreu
+    
+    # Input do valor base do plano e da idade do cliente
+    valorBase = float(input("Informe o valor base do plano: "))
+    idade = int(input("Informe a idade do cliente: "))
+    
+    # Variável para armazenar o valor percentual
+    percentual = 0
+    
+    # Estruturas condicionais para determinar o percentual do valor base
+    if 0 &lt;= idade &lt; 19:
+        percentual = 1.00  # 100% do valor base
+    elif 19 &lt;= idade &lt; 29:
+        percentual = 1.50  # 150% do valor base
+    elif 29 &lt;= idade &lt; 39:
+        percentual = 2.25  # 225% do valor base
+    elif 39 &lt;= idade &lt; 49:
+        percentual = 2.40  # 240% do valor base
+    elif 49 &lt;= idade &lt; 59:
+        percentual = 3.50  # 350% do valor base
+    elif idade &gt;= 59:
+        percentual = 6.00  # 600% do valor base
+    else:
+        print("Idade inválida.")
+        exit()  # Encerra o programa se a idade for inválida
+    
+    # Cálculo do valor mensal
+    valorMensal = valorBase * percentual
+    
+    # Exibição dos resultados
+    print("Sistema desenvolvido por João Vitor Abreu")  # Nome do desenvolvedor
+    print(f"O valor mensal do plano para a idade {idade} anos é: R${valorMensal:.2f}")  # Valor mensal
+        </code></pre>
+
+        <h3>Desenvolver um app de vendas para uma Pizzaria que vende sabores de Pizzas Doces e Pizzas Salgadas.</h3>
+ <br>
+ <h4>codigo python</h4>
+ <pre><code>
+    print("Bem-vindos à Pizzaria do joao vitor")
+    
+    print("""  
+    
+    Menu de Pizzas:  
+    
+    Tamanho P:  
+    
+      - Pizza Salgada (PS): R$ 30,00  
+    
+      - Pizza Doce (PD): R$ 34,00  
+    
+    Tamanho M:  
+    
+      - Pizza Salgada (PS): R$ 45,00  
+    
+      - Pizza Doce (PD): R$ 48,00  
+    
+    Tamanho G:  
+    
+      - Pizza Salgada (PS): R$ 60,00  
+    
+      - Pizza Doce (PD): R$ 66,00  
+    
+    """)  # EXIGÊNCIA DE CÓDIGO 1 de 8  
+    
+    
+    # Inicializando o acumulador do valor total do pedido  
+    
+    valor_total = 0  # EXIGÊNCIA DE CÓDIGO 5 de 8  
+    
+    
+    while True:  # EXIGÊNCIA DE CÓDIGO 7 de 8  
+    
+        # Entrada do sabor da pizza  
+    
+        sabor = input("Digite o sabor (PS para Pizza Salgada, PD para Pizza Doce): ").upper()  
+    
+        if sabor not in ['PS', 'PD']:  
+    
+            print("Sabor inválido. Tente novamente")  # EXIGÊNCIA DE SAÍDA DE CONSOLE 2 de 4  
+    
+            continue  # Retorna ao início do loop  
+    
+    
+        # Entrada do tamanho da pizza  
+    
+        tamanho = input("Digite o tamanho (P/M/G): ").upper()  
+    
+        if tamanho not in ['P', 'M', 'G']:  
+    
+            print("Tamanho inválido. Tente novamente")  # EXIGÊNCIA DE SAÍDA DE CONSOLE 3 de 4  
+    
+            continue  # Retorna ao início do loop  
+    
+    
+        # Determinando o valor da pizza com base no sabor e tamanho  
+    
+        if sabor == 'PS':  # Pizza Salgada  
+    
+            if tamanho == 'P':  
+    
+                valor_pizza = 30  
+    
+            elif tamanho == 'M':  
+    
+                valor_pizza = 45  
+    
+            elif tamanho == 'G':  
+    
+                valor_pizza = 60  
+    
+        elif sabor == 'PD':  # Pizza Doce  
+    
+            if tamanho == 'P':  
+    
+                valor_pizza = 34  
+    
+            elif tamanho == 'M':  
+    
+                valor_pizza = 48  
+    
+            elif tamanho == 'G':  
+    
+                valor_pizza = 66  
+    
+    
+        # Adicionando o valor da pizza ao acumulador  
+    
+        valor_total += valor_pizza  
+    
+    
+        # Pergunta se o cliente deseja continuar pedindo  
+    
+        continuar = input("Deseja pedir mais alguma coisa? (S/N): ").upper()  
+    
+        if continuar != 'S':  
+    
+            break  # Encerra o loop se a resposta for diferente de 'S'  
+    
+    
+    # Exibe o valor total do pedido  
+    
+    print(f"Valor total do pedido: R${valor_total:.2f}")  # EXIGÊNCIA DE CÓDIGO 6 de 8  
+    
+    
+    # O programa utiliza a estrutura while para repetir o processo de pedido  
+    
+    # As entradas são verificadas para garantir que o sabor e o tamanho sejam válidos  
+    
+    # O valor total do pedido é acumulado e exibido no final
+            </code></pre>
