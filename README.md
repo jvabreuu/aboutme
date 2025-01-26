@@ -17,7 +17,7 @@ Este projeto é uma página web que apresenta o currículo profissional, desenvo
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/jvabreuu/nome-do-repositorio.git
+   git clone https://github.com/jvabreuu/aboutme.git
    ```
 2. Abra o arquivo `index.html` no navegador.
 
