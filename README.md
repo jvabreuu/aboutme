@@ -4,8 +4,7 @@ Este projeto é uma página web que apresenta o currículo profissional, desenvo
 
 ## Conteúdo da Página
 
-- **Dados Pessoais**: joao vitor, Indaiatuba-sp
-- **Formação Acadêmica**: front ent -Alura, ADS-Uninter
+Informaçoes profissionais, como um curriculo online.
 
 
 ## Tecnologias Utilizadas
